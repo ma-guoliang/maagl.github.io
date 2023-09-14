@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>自我介绍</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffff, #0073e6);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #0073e6;
+            border-radius: 5px;
+        }
+        h1:hover {
+            color: #fff;
+            background-color: #0073e6;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 115, 230, 0.5);
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 宽高比例 */
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>自我介绍</h1>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td>马国梁</td>
+        </tr>
+        <tr>
+            <td>班级：</td>
+            <td>计科216</td>
+        </tr>
+        <tr>
+            <td>学号：</td>
+            <td>21141010319</td>
+        </tr>
+        <tr>
+            <td>联系方式：</td>
+            <td>19140250204</td>
+        </tr>
+        <tr>
+            <td>爱好：</td>
+            <td>下象棋、魔方、音乐</td>
+        </tr>
+    </table>
+    <h1>个人正面照</h1>
+    <img src="https://s2.loli.net/2023/09/05/17eWKc2lgomDrdP.jpg" alt="个人正面照">
+    <h1>个人爱好视频</h1>
+    <!-- 使用 https:// 或 http:// 开头的视频链接 -->
+    <div class="video-container">
+        <iframe src="https://player.bilibili.com/player.html?aid=533235314&bvid=BV1Yu411w758&cid=1258458664&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    </div>
+</body>
+</html>
